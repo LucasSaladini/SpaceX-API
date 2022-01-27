@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.company-info {
+    display: flex;
+    text-align: center;
+}
+
+.company-info-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.company-info-details h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 3vw;
+}
+
+.executives {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.executive-info {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+    text-align: center;
+    margin: 5vw 5vh;
+    padding: 2% 2%;
+    width: 19vw;
+}
+
+.executive-info img {
+    width: 13vw;
+    height: 20vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
