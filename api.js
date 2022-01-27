@@ -1,43 +1,159 @@
-const API_URL = 'https://api.spacexdata.com/v3'
+const BASE_URL = 'https://api.spacexdata.com/v4'
 
-async function fetchData() {
+async function companyInfo() {
     try {
-        const request = await fetch(API_URL)
-        const data = await request.json()
-        // console.log(data);
+        const response = await fetch(`${BASE_URL}/company`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function capsules() {
+    try {
+        const response = await fetch(`${BASE_URL}/capsules`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function cores() {
+    try {
+        const response = await fetch(`${BASE_URL}/cores`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function crew() {
+    try {
+        const response = await fetch(`${BASE_URL}/crew`)
+        const data = await response.json()
+        // console.log(data)
         return data
     } catch (error) {
         console.log(error);
     }
 }
 
-async function repoInfo() {
+async function dragons() {
     try {
-        const info = await fetchData()
-        // console.log(info);
-
-        const description = info.description
-        const docs = info.docs
-        const project = info.project_link
-        const version = info.version
-        console.log(description, docs, project, version);
-
-        var repoInfo = document.querySelector('.repo__info');
-        repoInfo.innerHTML = `<div>
-            <h3>Descrição</h3>
-            <p>${description}</p>
-            <h3>Documentação</h3>
-            <p>${docs}</p>
-            <h3>Repositório</h3>
-            <p>${project}</p>
-            <h3>Versão</h3>
-            <p>${version}</p>
-        </div>`
-
+        const response = await fetch(`${BASE_URL}/dragons`)
+        const data = await response.json()
+        // console.log(data)
+        return data
     } catch (error) {
         console.log(error);
     }
 }
 
-fetchData()
-repoInfo()
+async function landpads() {
+    try {
+        const response = await fetch(`${BASE_URL}/landpads`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function launches() {
+    try {
+        const response = await fetch(`${BASE_URL}/launches`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+// FURTHER VERIFiCATION
+async function launchpads() {
+    try {
+        const response = await fetch(`${BASE_URL}/launchpads`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function payloads() {
+    try {
+        const response = await fetch(`${BASE_URL}/payloads`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function roadsterInfo() {
+    try {
+        const response = await fetch(`${BASE_URL}/roadster`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function rockets() {
+    try {
+        const response = await fetch(`${BASE_URL}/rockets`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch(error) {
+        console.log(error)
+    }
+}
+
+async function ships() {
+    try {
+        const response = await fetch(`${BASE_URL}/ships`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch(error) {
+        console.log(error)
+    }
+}
+
+async function starlink() {
+    try {
+        const response = await fetch(`${BASE_URL}/starlink`)
+        const data = await response.json()
+        // console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+companyInfo()
+capsules()
+cores()
+crew()
+dragons()
+landpads()
+launches()
+launchpads()
+payloads()
+roadsterInfo()
+rockets()
+ships()
+starlink()
