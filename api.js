@@ -176,6 +176,56 @@ async function companyInfoHTML() {
                     <p>${info.cto_propulsion}</p>
                 </div>
             </div>
+            <div class='company-info-general'>
+                <div class='company-info-general-summary'>
+                    <h3>Sumário</h3>
+                    <p>${info.summary}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Funcionários</h3>
+                    <p>${info.employees}</p>
+                </div>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Fundação</h3>
+                    <p>${info.founded}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Fundador</h3>
+                    <p>${info.founder}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Sede</h3>
+                    <p>${info.headquarters.address} ${info.headquarters.city} ${info.headquarters.state} USA</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Locais de Lançamento</h3>
+                    <p>${info.launch_sites}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Links</h3>
+                    <p>Elon Musk Twitter: </p><p>${info.links.elon_twitter}</p>
+                    <p>Flickr: </p><p>${info.links.flickr}</p>
+                    <p>Twitter: </p><p>${info.links.twitter}</p>
+                    <p>Website: </p><p>${info.links.website}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Nome</h3>
+                    <p>${info.name}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Locais de Teste</h3>
+                    <p>${info.test_sites}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Valor de Mercado</h3>
+                    <p>${info.valuation}</p>
+                </div>
+                <div class='company-info-general-other-info'>
+                    <h3>Veículos</h3>
+                    <p>${info.vehicles}</p>
+                </div>
+            </div>
         </div>
         `
 }
