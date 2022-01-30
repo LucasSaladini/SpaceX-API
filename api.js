@@ -152,109 +152,73 @@ async function companyInfoHTML() {
     
     const htmlElement = document.querySelector('.company-info')
     htmlElement.innerHTML = `
-        <div class='company-info-details'>
-            <h2>Informações da Empresa</h2>
-            <div class='executives'>
-                <div class='executive-info'>
-                    <h3>CEO</h3>
-                    <img src='./images/elon-musk.jpg' alt='Elon Musk'>
-                    <p>${info.ceo}</p>
-                </div>
-                <div class='executive-info'>
-                    <h3>COO</h3>
-                    <img src='./images/gwynne-shotwell.jpg' alt='Elon Musk'>
-                    <p>${info.coo}</p>
-                </div>
-                <div class='executive-info'>
-                    <h3>CTO</h3>
-                    <img src='./images/elon-musk.jpg' alt='Elon Musk'>
-                    <p>${info.cto}</p>
-                </div>
-                <div class='executive-info'>
-                    <h3>CTO Propulsão</h3>
-                    <img src='./images/tom-muller.jpg' alt='Elon Musk'>
-                    <p>${info.cto_propulsion}</p>
-                </div>
+    <div class='company-info'>
+        <h1>Informações sobre a companhia</h1>
+        <section class="grid grid-row-1">
+            <div class="item item-1">
+                <h4>CEO</h4>
+                <p>${info.ceo}</p>
             </div>
-            <div class='company-info-general'>
-                <div class='company-info-general-summary'>
-                    <h3>Sumário</h3>
-                    <p>${info.summary}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Funcionários</h3>
-                    <p>${info.employees}</p>
-                </div>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Fundação</h3>
-                    <p>${info.founded}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Fundador</h3>
-                    <p>${info.founder}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Sede</h3>
-                    <p>${info.headquarters.address} ${info.headquarters.city} ${info.headquarters.state} USA</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Locais de Lançamento</h3>
-                    <p>${info.launch_sites}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Links</h3>
-                    <p>Elon Musk Twitter: </p><p>${info.links.elon_twitter}</p>
-                    <p>Flickr: </p><p>${info.links.flickr}</p>
-                    <p>Twitter: </p><p>${info.links.twitter}</p>
-                    <p>Website: </p><p>${info.links.website}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Nome</h3>
-                    <p>${info.name}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Locais de Teste</h3>
-                    <p>${info.test_sites}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Valor de Mercado</h3>
-                    <p>${info.valuation}</p>
-                </div>
-                <div class='company-info-general-other-info'>
-                    <h3>Veículos</h3>
-                    <p>${info.vehicles}</p>
-                </div>
+            <div class="item item-2">
+                <h4>COO</h4>
+                <p>${info.coo}</p>
             </div>
-        </div>
-        `
-}
+            <div class="item item-3">
+                <h4>CTO</h4>
+                <p>${info.cto}</p>
+            </div>
+            <div class="item item-4">
+                <h4>CTO Propulsão</h4>
+                <p>${info.cto_propulsion}</p>
+            </div>
+            <div class="item item-5">
+                <h4>Funcionários</h4>
+                <p>${info.employees}</p>
+            </div>
+            <div class="item item-6">
+                <h4>Fundação</h4>
+                <p>${info.founded}</p>
+            </div>
+            <div class="item item-7">
+                <h4>Sede</h4>
+                <p>${info.headquarters.address} ${info.headquarters.city} ${info.headquarters.state} USA</p>
+            </div>
+            <div class="item item-8">
+                <h4>Locais de Lançamento</h4>
+                <p>${info.launch_sites}</p>
+            </div>
+            <div class="item item-9">
+                <h4>Links</h4>
+                <p>${info.links.website}</p>
+                <p>${info.links.flickr}</p>
+                <p>${info.links.twitter}</p>
+                <p>${info.links.elon_twitter}</p>
+            </div>
+            <div class="item item-10">
+                <h4>Nome</h4>
+                <p>${info.name}</p>
+            </div>
+            <div class="item item-11">
+                <h4>Sumário</h4>
+                <p>${info.summary}</p>
+            </div>
+            <div class="item item-12">
+                <h4>Locais de Testes</h4>
+                <p>${info.test_sites}</p>
+            </div>
+            <div class="item item-13">
+                <h4>Valor de Mercado</h4>
+                <p>${info.valuation}</p>
+            </div>
+            <div class="item item-14">
+                <h4>Veículos</h4>
+                <p>${info.vehicles}</p>
+            </div>
 
-{/* <h3>Funcionários</h3>
-            <p>${info.employees}</p>
-            <h3>Fundação</h3>
-            <p>${info.founded}</p>
-            <h3>Fundador</h3>
-            <p>${info.founder}</p>
-            <h3>Sede</h3>
-            <p>${info.headquarters.address} ${info.headquarters.city} ${info.headquarters.state} USA</p>
-            <h3>Locais de Lançamento</h3>
-            <p>${info.launch_sites}</p>
-            <h3>Links</h3>
-            <p>Elon Musk Twitter: </p><p>${info.links.elon_twitter}</p>
-            <p>Flickr: </p><p>${info.links.flickr}</p>
-            <p>Twitter: </p><p>${info.links.twitter}</p>
-            <p>Website: </p><p>${info.links.website}</p>
-            <h3>Nome</h3>
-            <p>${info.name}</p>
-            <h3>Sumário</h3>
-            <p>${info.summary}</p>
-            <h3>Locais de Teste</h3>
-            <p>${info.test_sites}</p>
-            <h3>Valor de Mercado</h3>
-            <p>${info.valuation}</p>
-            <h3>Veículos</h3>
-            <p>${info.vehicles}</p> */}
+        </section>
+</div>
+    `
+}
 
 // General functions
 function fetchAll() {
