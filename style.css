@@ -1,7 +1,21 @@
+:root {
+    --blue: #5833a6;
+    --lightblue: #8679d9;
+    --gray: #2e3d59;
+    --darkgray: #141a26;
+    --black: #0d0d0d;
+    --white: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    color: var(--white)
 }
 
 .company-info {
@@ -22,7 +36,7 @@
 
 .item {
 	margin: 5px;
-	background: tomato;
+	background: var(--lightblue);
 	text-align: center;
 	font-size: 1.2em;
     border-radius: 5px;
