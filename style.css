@@ -11,7 +11,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: 50px;
+    grid-template-rows: repeat(2, 80px);
     margin: 5vh;
 
 }
@@ -25,6 +25,5 @@
 	background: tomato;
 	text-align: center;
 	font-size: 1.2em;
-    height: auto;
     border-radius: 5px;
 }
