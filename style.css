@@ -32,22 +32,49 @@ header {
     box-shadow: 0 0 25px 0 var(--white);
 }
 
-header * {
-    display: inline;
-}
-
 header img {
     height: 30px;
     margin-left: 3%;
 }
 
-header li {
-    margin: 20px;
+.menu {
+    list-style: none;
+    float: left;
 }
 
-header li a {
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
     color: var(--white);
     text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: var(--blue);
+    display: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+}
+
+.menu ul li ul {
+    display: block;
 }
 
 .company-info {
