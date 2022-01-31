@@ -15,7 +15,39 @@
 
 body {
     background: var(--black);
-    color: var(--white)
+    color: var(--white);
+    margin-top: 10%;
+    padding: 30px;
+}
+
+header {
+    background: var(--blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 var(--white);
+}
+
+header * {
+    display: inline;
+}
+
+header img {
+    height: 30px;
+    margin-left: 3%;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .company-info {
