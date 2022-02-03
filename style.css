@@ -78,6 +78,10 @@ header img {
     display: block;
 }
 
+.active {
+    background: var(--darkgray);
+}
+
 .company-info {
     text-align: center;
 }
