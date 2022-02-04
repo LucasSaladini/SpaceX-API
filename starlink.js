@@ -15,12 +15,7 @@ async function mapStarlink() {
     try {
         const data = await starlink()
         // console.log(data)
-        data.map((subarray) => {
-            return subarray.map((element) => {
-                return element
-            })
-        })
-        console.log(element)
+        var doubleArray = data.map(nested => console.log(nested))
     } catch (error) {
         console.log(error)
     }
