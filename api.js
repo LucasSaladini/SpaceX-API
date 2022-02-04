@@ -134,17 +134,6 @@ async function ships() {
     }
 }
 
-async function starlink() {
-    try {
-        const response = await fetch(`${BASE_URL}/starlink`)
-        const data = await response.json()
-        // console.log(data)
-        return data
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 // Display in HTML elements fetched from API
 async function companyInfoHTML() {
     const info = await companyInfo()
@@ -234,7 +223,6 @@ function fetchAll() {
     roadsterInfo()
     rockets()
     ships()
-    starlink()
 }
 
 function htmlHandle() {
