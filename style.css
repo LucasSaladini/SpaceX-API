@@ -104,4 +104,6 @@ header img {
 	text-align: center;
 	font-size: 1.2em;
     border-radius: 5px;
+    height: fit-content;
+    padding: 10px;
 }
