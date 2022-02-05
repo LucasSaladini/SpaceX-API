@@ -21,4 +21,8 @@ async function mapStarlink() {
     }
 }
 
+function displayInHTML () {
+    mapStarlink()
+}
+
 mapStarlink()
